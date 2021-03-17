@@ -1,2 +1,2 @@
 chessviz: chessviz.cpp
-	gcc -Wall -Werror chessviz.cpp
+	g++ -Wall -Werror chessviz.cpp
