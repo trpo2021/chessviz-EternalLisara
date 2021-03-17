@@ -1,47 +1,85 @@
-# Файл CLANG-FORMAT, созданный Visual Studio
-
-# Параметры стиля в этом файле являются наиболее безопасными для репликации
-# текущей конфигурации форматирования IDE из меню "Сервис" > "Параметры". Тем не менее 
-# необходимо проверить следующие параметры стиля:
-# AfterClass; AfterControlStatement; AfterEnum; AfterFunction; AfterNamespace; 
-# AfterStruct; AfterUnion
-
+---
+Language:        Cpp
 AccessModifierOffset: -4
-AlignAfterOpenBracket: DontAlign
-AllowShortBlocksOnASingleLine: true
-AllowShortFunctionsOnASingleLine: All
-BasedOnStyle: LLVM
-BraceWrapping:
-  AfterClass: false    # TODO: проверьте
-  AfterControlStatement: false    # TODO: проверьте
-  AfterEnum: false    # TODO: проверьте
-  AfterFunction: false    # TODO: проверьте
-  AfterNamespace: false    # TODO: проверьте
-  AfterStruct: false    # TODO: проверьте
-  AfterUnion: false    # TODO: проверьте
-  BeforeCatch: true
-  BeforeElse: true
-  IndentBraces: false
+AlignAfterOpenBracket: AlwaysBreak
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignEscapedNewlines: Left
+AlignOperands:   false
+AlignTrailingComments: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: true
+AlwaysBreakTemplateDeclarations: true
+BinPackArguments: false
+BinPackParameters: false
+BraceWrapping:   
+  AfterClass:      false
+  AfterControlStatement: false
+  AfterEnum:       false
+  AfterFunction:   true
+  AfterNamespace:  false
+  AfterStruct:     false
+  AfterUnion:      false
+  AfterExternBlock: false
+  BeforeCatch:     false
+  BeforeElse:      false
+  IndentBraces:    false
   SplitEmptyFunction: true
   SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+BreakBeforeBinaryOperators: All
 BreakBeforeBraces: Custom
-ColumnLimit: 0
-Cpp11BracedListStyle: false
+BreakBeforeInheritanceComma: false
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializersBeforeComma: false
+BreakConstructorInitializers: BeforeColon
+BreakStringLiterals: true
+ColumnLimit:     80
+CompactNamespaces: true
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 8
+Cpp11BracedListStyle: true
+DerivePointerAlignment: false
+ExperimentalAutoDetectBinPacking: false
 FixNamespaceComments: false
+IncludeBlocks:   Preserve
 IndentCaseLabels: false
 IndentPPDirectives: None
-IndentWidth: 4
-MaxEmptyLinesToKeep: 10
-NamespaceIndentation: All
+IndentWidth:     4
+IndentWrappedFunctionNames: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None
+PenaltyBreakAssignment: 2
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakFirstLessLess: 120
+PenaltyBreakString: 1000
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 60
 PointerAlignment: Left
-SortIncludes: false
-SortUsingDeclarations: false
+ReflowComments:  true
+SortIncludes:    true
+SortUsingDeclarations: true
 SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: true
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeParens: ControlStatements
 SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles:  false
+SpacesInContainerLiterals: false
 SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
-TabWidth: 4
-UseTab: true
+Standard:        Cpp11
+TabWidth:        8
+UseTab:          Never
+...
